@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: var(--vertical-margin-medium) var(--horizontal-margin-medium);
+}
+
+.navigation {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+
+.navigation__item {
+  list-style: none;
+  padding: 1rem;
+  text-transform: uppercase;
+  align-self: center;
+  justify-content: center;
+}
+
+.navigation__item:hover {
+  cursor: pointer;
+  background-color: var(--color-light-gray);
+}
+
+.navigation__link {
+  text-decoration: none;
+  color: var(--color-black);
+}
