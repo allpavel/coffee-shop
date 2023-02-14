@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  margin: var(--vertical-margin-medium) var(--horizontal-margin-medium);
+  margin: var(--vertical-margin-medium) var(--horizontal-margin-xl);
   z-index: 10;
 }
 
@@ -30,6 +30,6 @@
 }
 
 .navigation__link {
+  color: var(--color-white);
   text-decoration: none;
-  color: var(--color-black);
 }
