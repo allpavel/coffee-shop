@@ -1,8 +1,13 @@
 .container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   margin: var(--vertical-margin-medium) var(--horizontal-margin-medium);
+  z-index: 10;
 }
 
 .navigation {

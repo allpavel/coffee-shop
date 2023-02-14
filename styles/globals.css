@@ -9,6 +9,7 @@
 html,
 body {
   height: 100%;
+  position: relative;
 }
 body {
   line-height: 1.5;
@@ -45,6 +46,12 @@ h6 {
 :root {
   --vertical-margin-medium: 1rem;
   --horizontal-margin-medium: 1rem;
+  --vertical-padding-small: 0.5rem;
+  --vertical-padding-medium: 1rem;
+  --horizontal-padding-small: 0.5rem;
+  --horizontal-padding-medium: 1rem;
+  --horizontal-padding-large: 1.5rem;
+  --horizontal-padding-xl: 2rem;
   --color-white: #fff;
   --color-black: #30271c;
   --color-light-gray: #fcf5f5;
