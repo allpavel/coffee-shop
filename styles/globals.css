@@ -56,5 +56,8 @@ h6 {
   --horizontal-padding-xl: 2rem;
   --color-white: #fff;
   --color-black: #30271c;
+  --color-light-brown: #c7a17a;
+  --color-dark-brown: #6d563f;
   --color-light-gray: rgba(252, 245, 245, 0.1);
+  --color-dark-gray: #7e7e7e;
 }

@@ -1,0 +1,85 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: stretch;
+  gap: 2rem;
+  background-image: url('/images/footer-img.jpg');
+  color: var(--color-white);
+  padding: 4rem;
+}
+
+.hours,
+.posts,
+.contacts,
+.locations {
+  text-transform: uppercase;
+}
+
+.hours__day {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-top: var(--vertical-padding-medium);
+}
+
+.hours__line {
+  flex-grow: 1;
+  height: 2px;
+  background-color: var(--color-light-gray);
+  border: none;
+}
+
+.posts__list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.posts__list-item {
+  padding-top: var(--vertical-padding-medium);
+}
+
+.posts__list-date {
+  display: block;
+  color: var(--color-light-brown);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.address {
+  padding-top: var(--vertical-padding-medium);
+}
+
+.address__email {
+  color: var(--color-light-brown);
+  text-decoration: none;
+}
+
+.subscribe {
+  padding-top: var(--vertical-padding-medium);
+}
+
+.form {
+  display: flex;
+}
+
+.form__button {
+  cursor: pointer;
+  text-transform: uppercase;
+  color: var(--color-white);
+  background-color: var(--color-light-brown);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.form__button:hover {
+  background-color: var(--color-dark-brown);
+}
+
+.locations__shop {
+  padding-top: var(--vertical-padding-medium);
+}
+
+.locations__address {
+  font-style: italic;
+  color: var(--color-dark-gray);
+}
