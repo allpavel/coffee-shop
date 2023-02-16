@@ -1,5 +1,5 @@
 .credentials {
-  padding: var(--horizontal-padding-large);
+  padding: var(--padding-large);
   display: flex;
   justify-content: space-between;
   align-items: center;
