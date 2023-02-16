@@ -5,7 +5,7 @@ import styles from './Navbar.module.css';
 
 export const Navbar = () => {
   return (
-    <div className={styles.container}>
+    <header className={styles.container}>
       <Link href="#">
         <Image src={logo} alt={'Logo of the coffee shop'} />
       </Link>
@@ -41,6 +41,6 @@ export const Navbar = () => {
           </Link>
         </li>
       </ol>
-    </div>
+    </header>
   );
 };

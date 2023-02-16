@@ -1,0 +1,20 @@
+.credentials {
+  padding: var(--horizontal-padding-large);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-dark-gray);
+  background-color: #000;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  color: var(--color-white);
+  font-size: 1.25rem;
+}
+
+.socials__icon:hover {
+  cursor: pointer;
+  color: var(--color-dark-brown);
+}
