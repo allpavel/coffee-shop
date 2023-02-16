@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  margin: var(--vertical-margin-medium) var(--horizontal-margin-xl);
+  margin: var(--margin-medium) var(--margin-xl);
   z-index: 10;
 }
 

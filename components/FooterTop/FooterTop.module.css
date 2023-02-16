@@ -19,7 +19,7 @@
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  padding-top: var(--vertical-padding-medium);
+  padding-top: var(--padding-medium);
 }
 
 .hours__line {
@@ -35,7 +35,7 @@
 }
 
 .posts__list-item {
-  padding-top: var(--vertical-padding-medium);
+  padding-top: var(--padding-medium);
 }
 
 .posts__list-date {
@@ -46,7 +46,7 @@
 }
 
 .address {
-  padding-top: var(--vertical-padding-medium);
+  padding-top: var(--padding-medium);
 }
 
 .address__email {
@@ -55,7 +55,7 @@
 }
 
 .subscribe {
-  padding-top: var(--vertical-padding-medium);
+  padding-top: var(--padding-medium);
 }
 
 .form {
@@ -76,7 +76,7 @@
 }
 
 .locations__shop {
-  padding-top: var(--vertical-padding-medium);
+  padding-top: var(--padding-medium);
 }
 
 .locations__address {

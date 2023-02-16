@@ -44,20 +44,19 @@ h6 {
 }
 
 :root {
-  --vertical-margin-medium: 1rem;
-  --horizontal-margin-medium: 1rem;
-  --horizontal-margin-large: 1.5rem;
-  --horizontal-margin-xl: 2rem;
-  --vertical-padding-small: 0.5rem;
-  --vertical-padding-medium: 1rem;
-  --horizontal-padding-small: 0.5rem;
-  --horizontal-padding-medium: 1rem;
-  --horizontal-padding-large: 1.5rem;
-  --horizontal-padding-xl: 2rem;
+  --margin-medium: 1rem;
+  --margin-large: 1.5rem;
+  --margin-xl: 2rem;
+  --padding-small: 0.5rem;
+  --padding-medium: 1rem;
+  --padding-large: 1.5rem;
+  --padding-xl: 2rem;
   --color-white: #fff;
   --color-black: #30271c;
   --color-light-brown: #c7a17a;
   --color-dark-brown: #6d563f;
   --color-light-gray: rgba(252, 245, 245, 0.1);
   --color-dark-gray: #7e7e7e;
+  --color-beige: #eae7de;
+  --max-width: 1280px;
 }
