@@ -59,5 +59,6 @@ h6 {
   --color-light-gray: rgba(252, 245, 245, 0.1);
   --color-dark-gray: #7e7e7e;
   --color-beige: #eae7de;
+  --color-light-beige: #fdf8e8;
   --max-width: 1280px;
 }

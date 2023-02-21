@@ -5,9 +5,6 @@ import styles from './Hero.module.css';
 export const Hero = () => {
   return (
     <div className={styles.container}>
-      {/* <video autoPlay muted loop playsInline className={styles.hero_video}>
-        <source src="images/Sequence-01_0.mp4" type="video/mp4" />
-      </video> */}
       <div className={styles.hero_text}>
         <Image src={logo} alt="" />
         <h1 className={styles.hero_header}>Brewed to perfection</h1>
