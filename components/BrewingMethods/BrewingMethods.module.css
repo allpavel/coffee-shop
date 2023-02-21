@@ -1,0 +1,25 @@
+.container {
+  padding: var(--padding-xxl);
+}
+
+.content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.image {
+  margin: 0 auto;
+}
+
+.description {
+  text-align: center;
+}
+
+.header {
+  margin: var(--margin-large) 0;
+  text-transform: uppercase;
+  line-height: 1rem;
+}
