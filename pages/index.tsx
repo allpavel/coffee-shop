@@ -4,6 +4,7 @@ import { AboutUs } from '@/components/AboutUs/AboutUs';
 import { AboutApp } from '@/components/AboutApp/AboutApp';
 import { BrewingMethods } from '@/components/BrewingMethods/BrewingMethods';
 import { CallToAction } from '@/components/CallToAction/CallToAction';
+import { Menu } from '@/components/Menu/Menu';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <AboutApp />
       <BrewingMethods />
       <CallToAction />
+      <Menu />
     </>
   );
 }

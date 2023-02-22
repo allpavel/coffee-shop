@@ -1,0 +1,95 @@
+.container {
+  padding: var(--padding-xxl);
+  background-image: url('/images/home-1-parallax-2.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 90px);
+  column-gap: 4rem;
+  row-gap: 2rem;
+}
+
+.header {
+  font-size: 2rem;
+  text-align: center;
+  color: var(--color-white);
+  text-transform: uppercase;
+  margin-bottom: var(--margin-xxl);
+}
+
+.card {
+  display: flex;
+  color: var(--color-white);
+}
+
+.card_content {
+  flex-grow: 1;
+  padding-left: var(--padding-large);
+}
+
+.title_container {
+  display: flex;
+  align-items: baseline;
+}
+
+.title {
+  margin-block-end: 0;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.image {
+  height: 100%;
+  width: auto;
+}
+
+.description {
+  color: var(--color-light-brown);
+}
+
+.price {
+  font-size: 1.5rem;
+}
+
+.new {
+  background-color: var(--color-light-brown);
+  color: var(--color-white);
+  text-align: center;
+}
+
+.line {
+  flex-grow: 1;
+  border-bottom: 1px solid var(--color-dark-gray);
+}
+
+.button_container {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  cursor: pointer;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: var(--padding-medium) var(--padding-xl);
+  margin-top: var(--margin-xl);
+  background-color: var(--color-light-brown);
+  color: var(--color-white);
+  border: 2px solid;
+  border-color: var(--color-light-brown);
+  transition: all 0.4s ease;
+}
+
+.button:hover {
+  background-color: var(--color-white);
+  color: var(--color-light-brown);
+}
