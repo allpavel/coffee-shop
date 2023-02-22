@@ -1,6 +1,6 @@
 .container {
   padding: var(--padding-xxl);
-  background-image: url('/images/home-1-slider-img-2.jpg');
+  background-image: url('/images/home1-parallax-1.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
