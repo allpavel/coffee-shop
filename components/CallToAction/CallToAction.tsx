@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaLongArrowAltRight } from 'react-icons/fa';
-import image from '../../public/images/home-1-blog-f-img-1.jpg';
+import image from '../../public/images/news-1.jpg';
 import styles from './CallToAction.module.css';
 
 export const CallToAction = () => {
