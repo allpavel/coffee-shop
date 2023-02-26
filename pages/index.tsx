@@ -7,6 +7,7 @@ import { CallToAction } from '@/components/CallToAction/CallToAction';
 import { Menu } from '@/components/Menu/Menu';
 import { Shop } from '@/components/Shop/Shop';
 import { Gallery } from '@/components/Gallery/Gallery';
+import { News } from '@/components/News/News';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Menu />
       <Shop />
       <Gallery />
+      <News />
     </>
   );
 }
