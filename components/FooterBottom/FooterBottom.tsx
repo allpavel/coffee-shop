@@ -4,7 +4,7 @@ import { FaInstagram, FaTwitter, FaFacebookF, FaTumblr, FaVimeoV, FaLinkedinIn }
 export const FooterBottom = () => {
   return (
     <section className={styles.credentials}>
-      <div>© Pavel Alloyrov</div>
+      <div>© Pavel Alloyarov</div>
       <div className={styles.socials}>
         <FaInstagram className={styles.socials__icon} />
         <FaTwitter className={styles.socials__icon} />

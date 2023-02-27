@@ -58,3 +58,18 @@
   margin-right: var(--margin-medium);
   vertical-align: bottom;
 }
+
+.star {
+  color: var(--color-light-brown);
+}
+
+.price {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: var(--color-light-brown);
+  line-height: 1;
+}
+
+.cross {
+  text-decoration: line-through;
+}

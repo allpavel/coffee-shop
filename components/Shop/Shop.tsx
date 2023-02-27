@@ -4,6 +4,7 @@ import paperBag from '../../public/images/product-image-2.jpg';
 import plasticPauch from '../../public/images/product-image-3.jpg';
 import pot from '../../public/images/product-image-4.jpg';
 import { FaShoppingCart } from 'react-icons/fa';
+
 import styles from './Shop.module.css';
 
 export const Shop = () => {
@@ -19,8 +20,8 @@ export const Shop = () => {
               Add to cart
             </button>
           </div>
-          <div>rating</div>
-          <div>$46.60</div>
+          <div className={styles.star}>&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div className={styles.price}>$46.60</div>
         </article>
         <article className={styles.card}>
           <div className={styles.image_container}>
@@ -30,8 +31,10 @@ export const Shop = () => {
               Add to cart
             </button>
           </div>
-          <div>rating</div>
-          <div>$79.00</div>
+          <div className={styles.star}>&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+          <div className={styles.price}>
+            <span className={styles.cross}>$98.00</span> $79.00
+          </div>
         </article>
         <article className={styles.card}>
           <div className={styles.image_container}>
@@ -41,8 +44,8 @@ export const Shop = () => {
               Add to cart
             </button>
           </div>
-          <div>rating</div>
-          <div>$27.00</div>
+          <div className={styles.star}>&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div className={styles.price}>$27.00</div>
         </article>
         <article className={styles.card}>
           <div className={styles.image_container}>
@@ -52,8 +55,8 @@ export const Shop = () => {
               Add to cart
             </button>
           </div>
-          <div>rating</div>
-          <div>$71.00</div>
+          <div className={styles.star}>&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div className={styles.price}>$71.00</div>
         </article>
       </div>
     </section>
