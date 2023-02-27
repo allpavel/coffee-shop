@@ -1,0 +1,11 @@
+.container {
+  position: fixed;
+  right: 2%;
+  bottom: 5%;
+  color: var(--color-light-brown);
+  font-size: 2rem;
+}
+
+.container:hover {
+  cursor: pointer;
+}
