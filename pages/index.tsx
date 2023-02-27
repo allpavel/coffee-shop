@@ -8,6 +8,7 @@ import { Menu } from '@/components/Menu/Menu';
 import { Shop } from '@/components/Shop/Shop';
 import { Gallery } from '@/components/Gallery/Gallery';
 import { News } from '@/components/News/News';
+import { ScrollToTop } from '@/components/ScrollToTop/ScrollToTop';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Shop />
       <Gallery />
       <News />
+      <ScrollToTop />
     </>
   );
 }
