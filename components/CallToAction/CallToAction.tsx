@@ -18,9 +18,8 @@ export const CallToAction = () => {
             Read More <FaLongArrowAltRight className={styles.icon} />
           </Link>
         </div>
-        <div>
-          <Image src={image} alt="two cups of coffee on the table" className={styles.image} />
-        </div>
+
+        <Image src={image} alt="two cups of coffee on the table" className={styles.image} />
       </div>
     </section>
   );

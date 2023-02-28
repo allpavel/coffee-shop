@@ -83,3 +83,9 @@
   font-style: italic;
   color: var(--color-dark-gray);
 }
+
+@media screen and (max-width: 880px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

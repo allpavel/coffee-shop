@@ -42,3 +42,9 @@
   border: 2px solid;
   border-color: var(--color-white);
 }
+
+@media screen and (max-width: 880px) {
+  .hero_header {
+    text-align: center;
+  }
+}
