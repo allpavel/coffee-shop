@@ -60,13 +60,13 @@
     padding: var(--margin-medium) var(--margin-xl);
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .navigation {
     flex: 1 1 auto;
     flex-direction: column;
     justify-content: center;
-    opacity: 1;
     transition: all 0.4s ease;
   }
 
@@ -80,11 +80,10 @@
   }
 
   .closed {
-    height: 0;
+    height: 8%;
   }
 
   .navClosed {
-    height: 0;
-    opacity: 0;
+    display: none;
   }
 }
