@@ -18,3 +18,32 @@
   cursor: pointer;
   color: var(--color-dark-brown);
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: var(--padding-xl);
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .credentials {
+    display: grid;
+    grid-template-areas:
+      'socials socials'
+      'name rights';
+  }
+
+  .socials {
+    grid-area: socials;
+    justify-content: center;
+    margin-bottom: var(--margin-medium);
+  }
+
+  .name {
+    grid-area: name;
+  }
+
+  .rights {
+    grid-area: rights;
+  }
+}

@@ -49,3 +49,19 @@
   background-color: var(--color-white);
   color: var(--color-light-brown);
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: var(--padding-xl);
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .image {
+    justify-self: center;
+  }
+}

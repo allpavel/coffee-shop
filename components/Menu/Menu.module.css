@@ -100,3 +100,21 @@
     grid-template-rows: repeat(12, 90px);
   }
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: var(--padding-xl);
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .header {
+    margin-bottom: var(--margin-medium);
+  }
+  .title {
+    font-size: 1rem;
+  }
+  .price {
+    font-size: 1rem;
+  }
+}

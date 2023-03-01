@@ -5,8 +5,9 @@
   right: 0;
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
+  align-items: center;
   z-index: 10;
+  padding: var(--padding-medium);
   background-color: transparent;
   transition: all 0.4s ease;
 }
@@ -57,7 +58,7 @@
   }
 
   .mobileHeader {
-    padding: var(--margin-medium) var(--margin-xl);
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,10 +81,25 @@
   }
 
   .closed {
-    height: 8%;
+    height: 10%;
   }
 
   .navClosed {
     display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: var(--padding-medium);
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .container {
+    justify-content: center;
+  }
+  .image {
+    height: 5vh;
   }
 }

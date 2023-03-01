@@ -1,18 +1,16 @@
 .container {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: beige;
   height: 100vh;
   background-image: url('/images/home-1-slider-4.jpg');
   background-size: cover;
-  background-position: top center;
+  background-position: center;
 }
 
 .hero_text {
-  width: 100%;
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,5 +44,26 @@
 @media screen and (max-width: 880px) {
   .hero_header {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .container {
+    background-size: cover;
+    background-position: center;
+    padding-top: var(--padding-xxl);
+  }
+
+  .hero_text {
+    position: relative;
+    font-size: 1rem;
+  }
+
+  .hero_header {
+    font-size: 2rem;
+  }
+
+  .hero_desc {
+    font-size: 1.5rem;
   }
 }

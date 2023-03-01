@@ -7,9 +7,7 @@ export const AboutApp = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <div>
-          <Image src={image} alt="" />
-        </div>
+        <Image src={image} alt="" className={styles.image} />
         <div className={styles.description}>
           <p className={styles.title}>Application</p>
           <h2 className={styles.header}>Use Our Application</h2>

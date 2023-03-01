@@ -79,3 +79,29 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: var(--padding-xl);
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+  .header {
+    margin-bottom: var(--margin-medium);
+  }
+  .card {
+    align-items: center;
+  }
+
+  .image_container {
+    margin: 0 auto;
+    width: auto;
+  }
+  .image {
+    width: auto;
+  }
+}

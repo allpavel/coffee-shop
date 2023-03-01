@@ -32,7 +32,7 @@ export const Navbar = () => {
     >
       <div className={styles.mobileHeader}>
         <Link href="#">
-          <Image src={logo} alt={'Logo of the coffee shop'} />
+          <Image src={logo} alt={'Logo of the coffee shop'} className={styles.image} />
         </Link>
         {isOpen ? (
           <MdClose className={styles.menuIcon} onClick={handleOpenMenu} />

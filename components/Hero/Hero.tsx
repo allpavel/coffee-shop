@@ -4,7 +4,7 @@ import styles from './Hero.module.css';
 
 export const Hero = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <div className={styles.hero_text}>
         <Image src={logo} alt="" />
         <h1 className={styles.hero_header}>Brewed to perfection</h1>
@@ -14,6 +14,6 @@ export const Hero = () => {
         </div>
         <button className={styles.hero_button}>Read more</button>
       </div>
-    </div>
+    </section>
   );
 };

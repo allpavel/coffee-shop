@@ -23,3 +23,20 @@
   text-transform: uppercase;
   line-height: 1rem;
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: var(--padding-xl);
+  }
+
+  .content {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}

@@ -70,3 +70,23 @@
     margin-top: 0;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: var(--padding-xl);
+  }
+  .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: var(--margin-xxl);
+  }
+
+  .image {
+    margin-bottom: 0;
+  }
+
+  .header {
+    margin-top: 0;
+    line-height: 1;
+  }
+}
