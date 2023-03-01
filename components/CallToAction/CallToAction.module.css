@@ -63,3 +63,19 @@
     grid-row: 2;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: var(--padding-xl);
+  }
+
+  .text {
+    padding: var(--padding-xl);
+  }
+
+  .description {
+    max-width: 65%;
+    margin-top: var(--margin-xl);
+    margin-bottom: var(--margin-xl);
+  }
+}

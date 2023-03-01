@@ -11,7 +11,7 @@ export const News = () => {
     <section className={styles.container}>
       <h2 className={styles.header}>read our latest news</h2>
       <div className={styles.content}>
-        <article>
+        <article className={styles.card}>
           <Image src={image1} alt="coffee on the table" className={styles.imageSize} />
           <h3 className={styles.cardHeader}>make it simple</h3>
           <p className={styles.cardAuthor}>by Jane Wolf / Competition / 23.02.2022</p>
@@ -23,7 +23,7 @@ export const News = () => {
             Read More <FaLongArrowAltRight className={styles.icon} />
           </Link>
         </article>
-        <article>
+        <article className={styles.card}>
           <Image src={image2} alt="barista" className={styles.imageSize} />
           <h3 className={styles.cardHeader}>make it simple</h3>
           <p className={styles.cardAuthor}>by Jane Wolf / Competition / 23.02.2022</p>
@@ -35,7 +35,7 @@ export const News = () => {
             Read More <FaLongArrowAltRight className={styles.icon} />
           </Link>
         </article>
-        <article>
+        <article className={styles.card}>
           <Image src={image3} alt="coffee table" className={styles.imageSize} />
           <h3 className={styles.cardHeader}>make it simple</h3>
           <p className={styles.cardAuthor}>by Jane Wolf / Competition / 23.02.2022</p>

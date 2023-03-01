@@ -89,3 +89,9 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: var(--padding-xl);
+  }
+}

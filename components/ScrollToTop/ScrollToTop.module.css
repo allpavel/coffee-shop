@@ -9,3 +9,9 @@
 .container:hover {
   cursor: pointer;
 }
+
+@media screen and (max-width: 600px) {
+  .container {
+    font-size: 2.5rem;
+  }
+}
