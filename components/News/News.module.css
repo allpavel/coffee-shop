@@ -78,3 +78,9 @@
     margin-bottom: 0;
   }
 }
+
+@media screen and (max-width: 440px) {
+  .header {
+    margin-bottom: var(--margin-medium);
+  }
+}

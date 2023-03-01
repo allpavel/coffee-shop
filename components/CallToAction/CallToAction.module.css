@@ -79,3 +79,24 @@
     margin-bottom: var(--margin-xl);
   }
 }
+
+@media screen and (max-width: 440px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .text {
+    padding-left: var(--margin-medium);
+    padding-right: var(--margin-medium);
+  }
+
+  .header {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    max-width: 65%;
+    margin-top: var(--margin-medium);
+    margin-bottom: var(--margin-medium);
+  }
+}

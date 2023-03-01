@@ -4,7 +4,7 @@ import { FaInstagram, FaTwitter, FaFacebookF, FaTumblr, FaVimeoV, FaLinkedinIn }
 export const FooterBottom = () => {
   return (
     <section className={styles.credentials}>
-      <div>© Pavel Alloyarov</div>
+      <div className={styles.name}>© Pavel Alloyarov</div>
       <div className={styles.socials}>
         <FaInstagram className={styles.socials__icon} />
         <FaTwitter className={styles.socials__icon} />
@@ -13,7 +13,7 @@ export const FooterBottom = () => {
         <FaVimeoV className={styles.socials__icon} />
         <FaLinkedinIn className={styles.socials__icon} />
       </div>
-      <div>2023 All Rights Reserved</div>
+      <div className={styles.rights}>2023 All Rights Reserved</div>
     </section>
   );
 };
