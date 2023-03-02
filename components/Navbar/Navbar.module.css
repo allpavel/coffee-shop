@@ -19,22 +19,17 @@
   align-items: stretch;
 }
 
-.navigation__item {
-  list-style: none;
+.navigation__link {
+  display: inline-block;
   padding: 1rem;
   text-transform: uppercase;
-  align-self: center;
-  justify-content: center;
-}
-
-.navigation__item:hover {
-  cursor: pointer;
-  background-color: var(--color-light-gray);
-}
-
-.navigation__link {
   color: var(--color-white);
   text-decoration: none;
+}
+
+.navigation__link:hover {
+  cursor: pointer;
+  background-color: var(--color-light-gray);
 }
 
 .shadow {
@@ -69,10 +64,6 @@
     flex-direction: column;
     justify-content: center;
     transition: all 0.4s ease;
-  }
-
-  .navigation__item {
-    padding: var(--padding-medium) 6rem;
   }
 
   .open {
