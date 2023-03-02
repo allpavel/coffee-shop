@@ -43,6 +43,7 @@ h6 {
 }
 
 :root {
+  --margin-small: 0.5rem;
   --margin-medium: 1rem;
   --margin-large: 1.5rem;
   --margin-xl: 2rem;
@@ -62,3 +63,12 @@ h6 {
   --color-light-beige: #fdf8e8;
   --max-width: 1280px;
 }
+/* 
+@media screen and (max-width: 800px) {
+}
+
+@media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 440px) {
+} */
