@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: beige;
+  height: 50vh;
+  background-image: url('/images/AboutPage/about-page-hero-2.jpg');
+  background-size: cover;
+  background-position: top;
+}
+
+.hero_header {
+  font-size: 4rem;
+  color: var(--color-white);
+  text-transform: uppercase;
+  padding-top: 2rem;
+}
+
+@media screen and (max-width: 880px) {
+  .hero_header {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .container {
+    padding-top: var(--padding-xxl);
+  }
+  .hero_header {
+    font-size: 2rem;
+  }
+}

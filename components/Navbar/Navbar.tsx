@@ -31,7 +31,7 @@ export const Navbar = () => {
       className={`${styles.container} ${position > 400 ? styles.shadow : ''} ${isOpen ? styles.open : styles.closed}`}
     >
       <div className={styles.mobileHeader}>
-        <Link href="#">
+        <Link href="/">
           <Image src={logo} alt={'Logo of the coffee shop'} className={styles.image} />
         </Link>
         {isOpen ? (
@@ -42,12 +42,12 @@ export const Navbar = () => {
       </div>
       <nav className={`${styles.navigation} ${isOpen ? '' : styles.navClosed} `}>
         <div className={styles.navigation__item}>
-          <Link href="#" className={styles.navigation__link}>
+          <Link href="/" className={styles.navigation__link}>
             home
           </Link>
         </div>
         <div className={styles.navigation__item}>
-          <Link href="#" className={styles.navigation__link}>
+          <Link href="/about" className={styles.navigation__link}>
             about
           </Link>
         </div>
