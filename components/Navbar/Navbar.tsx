@@ -41,36 +41,24 @@ export const Navbar = () => {
         )}
       </div>
       <nav className={`${styles.navigation} ${isOpen ? '' : styles.navClosed} `}>
-        <div className={styles.navigation__item}>
-          <Link href="/" className={styles.navigation__link}>
-            home
-          </Link>
-        </div>
-        <div className={styles.navigation__item}>
-          <Link href="/about" className={styles.navigation__link}>
-            about
-          </Link>
-        </div>
-        <div className={styles.navigation__item}>
-          <Link href="#" className={styles.navigation__link}>
-            reservation
-          </Link>
-        </div>
-        <div className={styles.navigation__item}>
-          <Link href="#" className={styles.navigation__link}>
-            blog
-          </Link>
-        </div>
-        <div className={styles.navigation__item}>
-          <Link href="#" className={styles.navigation__link}>
-            shop
-          </Link>
-        </div>
-        <div className={styles.navigation__item}>
-          <Link href="#" className={styles.navigation__link}>
-            team
-          </Link>
-        </div>
+        <Link href="/" className={styles.navigation__link}>
+          home
+        </Link>
+        <Link href="/about" className={styles.navigation__link}>
+          about
+        </Link>
+        <Link href="#" className={styles.navigation__link}>
+          reservation
+        </Link>
+        <Link href="#" className={styles.navigation__link}>
+          blog
+        </Link>
+        <Link href="#" className={styles.navigation__link}>
+          shop
+        </Link>
+        <Link href="#" className={styles.navigation__link}>
+          team
+        </Link>
       </nav>
     </header>
   );
