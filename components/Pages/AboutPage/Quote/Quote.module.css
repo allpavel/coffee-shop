@@ -1,0 +1,40 @@
+.container {
+  padding: var(--padding-xxl);
+}
+
+.content {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quote {
+  font-size: 2rem;
+  font-style: italic;
+  margin-top: var(--margin-xl);
+  margin-bottom: var(--margin-xl);
+}
+
+.author {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.icon {
+  font-size: 2rem;
+  color: var(--color-light-brown);
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: var(--padding-xl);
+  }
+
+  .quote {
+    font-size: 1.5rem;
+  }
+
+  .author {
+    font-size: 1rem;
+  }
+}
