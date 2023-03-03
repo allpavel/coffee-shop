@@ -24,18 +24,18 @@
   line-height: 1rem;
 }
 
-@media screen and (max-width: 600px) {
-  .container {
-    padding: var(--padding-xl);
-  }
-
+@media screen and (max-width: 800px) {
   .content {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 600px) {
+  .container {
+    padding: var(--padding-xl);
+  }
+
   .content {
     grid-template-columns: 1fr;
   }

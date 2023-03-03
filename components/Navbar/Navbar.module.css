@@ -7,7 +7,8 @@
   justify-content: space-between;
   align-items: center;
   z-index: 10;
-  padding: var(--padding-medium);
+  padding-right: var(--padding-medium);
+  padding-left: var(--padding-medium);
   background-color: transparent;
   transition: all 0.4s ease;
 }
