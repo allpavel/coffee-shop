@@ -4,7 +4,18 @@
   margin-top: var(--margin-medium);
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.brown {
   color: var(--color-light-brown);
+}
+
+.black {
+  color: var(--color-black);
+}
+
+.white {
+  color: var(--color-white);
 }
 
 .icon {
