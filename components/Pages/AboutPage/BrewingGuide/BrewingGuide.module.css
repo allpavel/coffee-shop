@@ -1,0 +1,66 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.content {
+  padding: var(--padding-xl);
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.grid1 {
+  color: var(--color-white);
+  background-image: url('/images/AboutPage/offer-1.jpg');
+  width: 100%;
+  background-color: var(--color-light-brown);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.header {
+  text-transform: uppercase;
+  margin-bottom: var(--margin-large);
+}
+
+.grid2 {
+  background-color: var(--color-beige);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  margin-top: var(--margin-medium);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.black {
+  color: var(--color-black);
+}
+
+.white {
+  color: var(--color-white);
+}
+
+.icon {
+  position: relative;
+  margin-left: 5px;
+  left: 0;
+  transition: all 0.4s ease;
+}
+
+.button:hover .icon {
+  left: 2%;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
