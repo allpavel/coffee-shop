@@ -5,6 +5,7 @@ import { ClientsLogos } from '@/components/Pages/AboutPage/ClientsLogos/ClientsL
 import { Hero } from '@/components/Pages/AboutPage/Hero/Hero';
 import { Hero2 } from '@/components/Pages/AboutPage/Hero2/Hero2';
 import { Quote } from '@/components/Pages/AboutPage/Quote/Quote';
+import { ScrollToTop } from '@/components/ScrollToTop/ScrollToTop';
 
 export default function About() {
   return (
@@ -16,6 +17,7 @@ export default function About() {
       <BrewingGuide />
       <Quote />
       <ClientsLogos />
+      <ScrollToTop />
     </>
   );
 }
