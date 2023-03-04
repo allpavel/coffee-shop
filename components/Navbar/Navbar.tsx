@@ -56,7 +56,7 @@ export const Navbar = () => {
         <Link href="#" className={styles.navigation__link}>
           shop
         </Link>
-        <Link href="#" className={styles.navigation__link}>
+        <Link href="/team" className={styles.navigation__link}>
           team
         </Link>
       </nav>
