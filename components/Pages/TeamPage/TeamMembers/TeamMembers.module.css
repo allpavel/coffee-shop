@@ -52,8 +52,18 @@
   color: var(--color-black);
 }
 
+@media screen and (max-width: 1000px) {
+  .content {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .container {
     padding: var(--padding-xl);
+  }
+
+  .content {
+    grid-template-columns: 1fr;
   }
 }
