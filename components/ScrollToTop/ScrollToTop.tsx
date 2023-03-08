@@ -5,7 +5,6 @@ import styles from './ScrollToTop.module.css';
 
 export const ScrollToTop = () => {
   const [position, setPosition] = useState(0);
-  console.log('render');
   const handleClickToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
