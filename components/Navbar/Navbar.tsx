@@ -1,15 +1,17 @@
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
-import { throttle } from '@/utills/throttle';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { MdClose } from 'react-icons/md';
+import { throttle } from '@/utills/throttle';
 import logo from '../../public/images/logo-2.png';
 import styles from './Navbar.module.css';
 
 export const Navbar = () => {
   const [position, setPosition] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
+  const router = useRouter();
 
   const handleNavBarChange = () => {
     setPosition(window.scrollY);
@@ -26,6 +28,10 @@ export const Navbar = () => {
 
     return () => removeEventListener('scroll', throttledhHandleNavBarChange);
   }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  }, [isOpen]);
   return (
     <header
       className={`${styles.container} ${position > 400 ? styles.shadow : ''} ${isOpen ? styles.open : styles.closed}`}
@@ -40,23 +46,29 @@ export const Navbar = () => {
           <GiHamburgerMenu className={styles.menuIcon} onClick={handleOpenMenu} />
         )}
       </div>
-      <nav className={`${styles.navigation} ${isOpen ? '' : styles.navClosed} `}>
-        <Link href="/" className={styles.navigation__link}>
+      <nav className={`${styles.navigation} ${isOpen ? '' : styles.navClosed} `} onClick={handleOpenMenu}>
+        <Link href="/" className={`${styles.navigation__link} ${router.pathname === '/' ? styles.active : ''}`}>
           home
         </Link>
-        <Link href="/about" className={styles.navigation__link}>
+        <Link
+          href="/about"
+          className={`${styles.navigation__link} ${router.pathname === '/about' ? styles.active : ''}`}
+        >
           about
         </Link>
-        <Link href="#" className={styles.navigation__link}>
+        <Link
+          href="/reservation"
+          className={`${styles.navigation__link} ${router.pathname === '/reservation' ? styles.active : ''}`}
+        >
           reservation
         </Link>
-        <Link href="#" className={styles.navigation__link}>
+        <Link href="#" className={`${styles.navigation__link} ${router.pathname === '/blog' ? styles.active : ''}`}>
           blog
         </Link>
-        <Link href="#" className={styles.navigation__link}>
+        <Link href="#" className={`${styles.navigation__link} ${router.pathname === '/shop' ? styles.active : ''}`}>
           shop
         </Link>
-        <Link href="/team" className={styles.navigation__link}>
+        <Link href="/team" className={`${styles.navigation__link} ${router.pathname === '/team' ? styles.active : ''}`}>
           team
         </Link>
       </nav>
