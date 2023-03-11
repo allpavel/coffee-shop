@@ -18,9 +18,6 @@
   margin-bottom: var(--margin-large);
 }
 
-.form {
-}
-
 .form_content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -49,4 +46,19 @@
 .form_button:hover {
   color: var(--color-white);
   background-color: var(--color-black);
+}
+
+@media screen and (max-width: 800px) {
+  .title_container {
+    min-width: 100%;
+  }
+  .form_content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: var(--padding-xl);
+  }
 }
