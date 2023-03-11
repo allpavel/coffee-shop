@@ -41,6 +41,10 @@
   display: none;
 }
 
+.menuIcon:hover {
+  cursor: pointer;
+}
+
 .active {
   background-color: var(--color-light-gray);
 }
