@@ -20,7 +20,6 @@ export const Navbar = () => {
   const handleOpenMenu = () => {
     setIsOpen((prev) => !prev);
   };
-
   const throttledhHandleNavBarChange = throttle(handleNavBarChange, 200);
 
   useEffect(() => {
@@ -32,6 +31,7 @@ export const Navbar = () => {
   useEffect(() => {
     document.body.style.overflow = isOpen ? 'hidden' : '';
   }, [isOpen]);
+
   return (
     <header
       className={`${styles.container} ${position > 400 ? styles.shadow : ''} ${isOpen ? styles.open : styles.closed}`}
@@ -46,7 +46,7 @@ export const Navbar = () => {
           <GiHamburgerMenu className={styles.menuIcon} onClick={handleOpenMenu} />
         )}
       </div>
-      <nav className={`${styles.navigation} ${isOpen ? '' : styles.navClosed} `} onClick={handleOpenMenu}>
+      <nav className={`${styles.navigation} ${isOpen ? '' : styles.navClosed} `}>
         <Link href="/" className={`${styles.navigation__link} ${router.pathname === '/' ? styles.active : ''}`}>
           home
         </Link>
