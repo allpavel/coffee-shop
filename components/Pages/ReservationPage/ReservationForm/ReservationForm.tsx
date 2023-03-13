@@ -41,21 +41,58 @@ export const ReservationForm = () => {
         </div>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className={styles.form_content}>
-            <input type="text" placeholder="Name*" className={styles.form_input} {...register('name')} />
+            <input
+              type="text"
+              placeholder="Name*"
+              aria-label="Name"
+              className={styles.form_input}
+              {...register('name')}
+            />
             {errors.name?.message && <p>{errors.name.message}</p>}
-            <input type="text" placeholder="Phone*" className={styles.form_input} {...register('phone')} />
+            <input
+              type="text"
+              placeholder="Phone*"
+              aria-label="Phone"
+              className={styles.form_input}
+              {...register('phone')}
+            />
             {errors.phone?.message && <p>{errors.phone.message}</p>}
-            <input type="number" placeholder="Seats*" className={styles.form_input} {...register('seats')} />
+            <input
+              type="number"
+              placeholder="Seats*"
+              aria-label="Seats"
+              className={styles.form_input}
+              {...register('seats')}
+            />
             {errors.seats?.message && <p>{errors.seats.message}</p>}
-            <input type="date" placeholder="dd.mm.yyyy" className={styles.form_input} {...register('date')} />
+            <input
+              type="date"
+              placeholder="dd.mm.yyyy"
+              aria-label="Date"
+              className={styles.form_input}
+              {...register('date')}
+            />
             {errors.date?.message && <p>{errors.date.message}</p>}
-            <input type="text" placeholder="Time" className={styles.form_input} {...register('time')} />
+            <input
+              type="text"
+              placeholder="Time"
+              aria-label="Time"
+              className={styles.form_input}
+              {...register('time')}
+            />
             {errors.time?.message && <p>{errors.time.message}</p>}
-            <input type="text" placeholder="Email*" className={styles.form_input} {...register('email')} />
+            <input
+              type="text"
+              placeholder="Email*"
+              aria-label="Email"
+              className={styles.form_input}
+              {...register('email')}
+            />
             {errors.email?.message && <p>{errors.email.message}</p>}
           </div>
           <textarea
             placeholder="Notes"
+            aria-label="Notes"
             rows={5}
             className={`${styles.form_input} ${styles.form_textarea}`}
             {...register('notes')}
