@@ -24,7 +24,12 @@
   gap: 2rem;
 }
 
+.form_input_container {
+  position: relative;
+}
+
 .form_input {
+  width: 100%;
   font-style: italic;
   background-color: var(--color-beige);
   padding: var(--padding-small);
@@ -38,7 +43,8 @@
 }
 
 .form_button {
-  padding: var(--margin-medium) var(--margin-xxl);
+  width: 20%;
+  padding: var(--margin-medium);
   cursor: pointer;
   transition: all 0.4s ease;
 }
@@ -48,12 +54,24 @@
   background-color: var(--color-black);
 }
 
+.error {
+  color: red;
+}
+
 @media screen and (max-width: 800px) {
   .title_container {
     min-width: 100%;
   }
   .form_content {
     grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: var(--padding-xl);
+  }
+
+  .form_button {
+    min-width: 50%;
   }
 }
 
