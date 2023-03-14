@@ -50,7 +50,11 @@ export const ReservationForm = () => {
                 className={styles.form_input}
                 {...register('name')}
               />
-              {errors.name?.message && <p className={styles.error}>{errors.name.message}</p>}
+              {errors.name?.message && (
+                <p role="alert" className={styles.error}>
+                  {errors.name.message}
+                </p>
+              )}
             </div>
             <div>
               <input
@@ -61,7 +65,11 @@ export const ReservationForm = () => {
                 className={styles.form_input}
                 {...register('phone')}
               />
-              {errors.phone?.message && <p className={styles.error}>{errors.phone.message}</p>}
+              {errors.phone?.message && (
+                <p role="alert" className={styles.error}>
+                  {errors.phone.message}
+                </p>
+              )}
             </div>
             <div>
               <input
@@ -72,7 +80,11 @@ export const ReservationForm = () => {
                 className={styles.form_input}
                 {...register('seats')}
               />
-              {errors.seats?.message && <p className={styles.error}>{errors.seats.message}</p>}
+              {errors.seats?.message && (
+                <p role="alert" className={styles.error}>
+                  {errors.seats.message}
+                </p>
+              )}
             </div>
             <div>
               <input
@@ -83,7 +95,11 @@ export const ReservationForm = () => {
                 className={styles.form_input}
                 {...register('date')}
               />
-              {errors.date?.message && <p className={styles.error}>{errors.date.message}</p>}
+              {errors.date?.message && (
+                <p role="alert" className={styles.error}>
+                  {errors.date.message}
+                </p>
+              )}
             </div>
             <div>
               <input
@@ -94,7 +110,11 @@ export const ReservationForm = () => {
                 className={styles.form_input}
                 {...register('time')}
               />
-              {errors.time?.message && <p className={styles.error}>{errors.time.message}</p>}
+              {errors.time?.message && (
+                <p role="alert" className={styles.error}>
+                  {errors.time.message}
+                </p>
+              )}
             </div>
             <div>
               <input
@@ -105,7 +125,11 @@ export const ReservationForm = () => {
                 className={styles.form_input}
                 {...register('email')}
               />
-              {errors.email?.message && <p className={styles.error}>{errors.email.message}</p>}
+              {errors.email?.message && (
+                <p role="alert" className={styles.error}>
+                  {errors.email.message}
+                </p>
+              )}
             </div>
           </div>
           <textarea
