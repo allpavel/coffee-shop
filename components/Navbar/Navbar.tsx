@@ -48,28 +48,28 @@ export const Navbar = () => {
       </div>
       <nav className={`${styles.navigation} ${isOpen ? '' : styles.navClosed} `}>
         <Link href="/" className={`${styles.navigation__link} ${router.pathname === '/' ? styles.active : ''}`}>
-          home
+          Home
         </Link>
         <Link
           href="/about"
           className={`${styles.navigation__link} ${router.pathname === '/about' ? styles.active : ''}`}
         >
-          about
+          About
         </Link>
         <Link
           href="/reservation"
           className={`${styles.navigation__link} ${router.pathname === '/reservation' ? styles.active : ''}`}
         >
-          reservation
+          Reservation
         </Link>
-        <Link href="#" className={`${styles.navigation__link} ${router.pathname === '/blog' ? styles.active : ''}`}>
-          blog
+        <Link href="/blog" className={`${styles.navigation__link} ${router.pathname === '/blog' ? styles.active : ''}`}>
+          Blog
         </Link>
         <Link href="#" className={`${styles.navigation__link} ${router.pathname === '/shop' ? styles.active : ''}`}>
-          shop
+          Shop
         </Link>
         <Link href="/team" className={`${styles.navigation__link} ${router.pathname === '/team' ? styles.active : ''}`}>
-          team
+          Team
         </Link>
       </nav>
     </header>
