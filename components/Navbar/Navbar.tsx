@@ -71,6 +71,12 @@ export const Navbar = () => {
         <Link href="/team" className={`${styles.navigation__link} ${router.pathname === '/team' ? styles.active : ''}`}>
           Team
         </Link>
+        <Link
+          href="/contacts"
+          className={`${styles.navigation__link} ${router.pathname === '/contacts' ? styles.active : ''}`}
+        >
+          Contacts
+        </Link>
       </nav>
     </header>
   );
