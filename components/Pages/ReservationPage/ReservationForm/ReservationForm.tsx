@@ -118,7 +118,7 @@ export const ReservationForm = () => {
             </div>
             <div>
               <input
-                type="text"
+                type="email"
                 placeholder="Email*"
                 aria-label="Email"
                 aria-invalid={errors.email ? 'true' : 'false'}

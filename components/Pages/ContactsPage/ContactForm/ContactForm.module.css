@@ -1,0 +1,46 @@
+.title {
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.description {
+  margin-top: var(--margin-xl);
+  margin-bottom: var(--margin-xl);
+}
+
+.form_input_container {
+  position: relative;
+  margin-bottom: var(--margin-xl);
+}
+
+.form_input {
+  width: 100%;
+  font-style: italic;
+  background-color: var(--color-beige);
+  padding: var(--padding-small);
+  border: 2px solid transparent;
+}
+
+.form_textarea_container {
+  margin-bottom: var(--margin-xl);
+}
+
+.form_textarea {
+  width: 100%;
+}
+
+.form_button {
+  width: 20%;
+  padding: var(--margin-medium);
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.form_button:hover {
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+
+.error {
+  color: red;
+}
