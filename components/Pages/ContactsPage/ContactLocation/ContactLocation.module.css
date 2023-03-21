@@ -23,3 +23,14 @@
   font-size: 2rem;
   margin-right: var(--margin-small);
 }
+
+@media screen and (max-width: 600px) {
+  .description {
+    margin-top: var(--margin-medium);
+    margin-bottom: var(--margin-medium);
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
