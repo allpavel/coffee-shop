@@ -44,3 +44,19 @@
 .error {
   color: red;
 }
+
+@media screen and (max-width: 600px) {
+  .description {
+    margin-top: var(--margin-medium);
+    margin-bottom: var(--margin-medium);
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .form_button {
+    width: 30%;
+    padding: var(--margin-small) var(--padding-medium);
+    cursor: pointer;
+    transition: color 0.4s ease, background-color 0.4s ease;
+  }
+}

@@ -82,7 +82,7 @@ export const ContactForm = () => {
           )}
         </div>
 
-        <input type="submit" className={`${styles.form_input} ${styles.form_button}`} />
+        <input type="submit" className={`${styles.form_input} ${styles.form_button}`} value="Send" />
       </form>
     </section>
   );

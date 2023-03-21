@@ -1,0 +1,36 @@
+.title {
+  text-transform: uppercase;
+}
+
+.description {
+  margin-top: var(--margin-xl);
+  margin-bottom: var(--margin-xl);
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: var(--margin-xl);
+}
+
+.card {
+  display: flex;
+  margin-bottom: var(--margin-xl);
+}
+
+.icon {
+  color: var(--color-light-brown);
+  font-size: 2rem;
+  margin-right: var(--margin-small);
+}
+
+@media screen and (max-width: 600px) {
+  .description {
+    margin-top: var(--margin-medium);
+    margin-bottom: var(--margin-medium);
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
