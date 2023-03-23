@@ -41,7 +41,7 @@
 .icon {
   cursor: pointer;
   margin-right: var(--margin-medium);
-  transition: all 0.4s ease;
+  transition: color 0.4s ease;
 }
 
 .icon:last-of-type {
