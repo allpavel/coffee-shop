@@ -24,6 +24,7 @@ export const getStaticProps: GetStaticProps = async () => {
     const slug = file.replace('.md', '');
     const markdownMeta = fs.readFileSync(`${basicPath}/${file}`, 'utf-8');
     const { data: frontmatter } = matter(markdownMeta);
+
     return {
       slug,
       frontmatter,
