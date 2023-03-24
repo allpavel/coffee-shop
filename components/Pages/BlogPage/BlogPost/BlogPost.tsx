@@ -1,15 +1,17 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaLongArrowAltRight } from 'react-icons/fa';
-import postImage from '../../../../public/images/BlogPage/post-1.jpg';
+import { BlogPostType } from '@/types/types';
 import styles from './BlogPost.module.css';
 
-export const BlogPost = () => {
+export const BlogPost = ({ post }: { post: BlogPostType }) => {
   return (
     <article>
-      <Image src={postImage} alt="" />
-      <h2>Cattle above moveth moved. Second which.</h2>
-      <p>by Sam Agile / 30.10.2022</p>
+      <Image src={post.frontmatter.cover_image} alt="" width={400} height={400} />
+      <h2>{post.frontmatter.title}</h2>
+      <p>
+        by {post.frontmatter.author} / {post.frontmatter.date}
+      </p>
       <p>
         Give land moveth from all gathered male made beginning earth Gathering. Set bearing waters have without in
         spirit. Given. Brought two that beast creature give creepeth also don't gathering wherein day, all their you'll
@@ -17,7 +19,7 @@ export const BlogPost = () => {
         abundantly.
       </p>
       <div>
-        <Link href="#" className={styles.button}>
+        <Link href={post.slug} className={styles.button}>
           Read More <FaLongArrowAltRight className={styles.icon} />
         </Link>
       </div>
