@@ -1,5 +1,8 @@
 .container {
   padding: var(--padding-xxl);
+  display: flex;
+  max-width: var(--max-width);
+  margin: 0 auto;
 }
 
 .content {
