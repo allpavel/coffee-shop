@@ -6,10 +6,10 @@ import styles from './BlogPost.module.css';
 
 export const BlogPost = ({ post }: { post: BlogPostType }) => {
   return (
-    <article>
-      <Image src={post.frontmatter.cover_image} alt="" width={400} height={400} />
-      <h2>{post.frontmatter.title}</h2>
-      <p>
+    <article className={styles.post}>
+      <Image src={post.frontmatter.cover_image} alt="" width={600} height={600} className={styles.image} />
+      <h2 className={styles.title}>{post.frontmatter.title}</h2>
+      <p className={styles.author}>
         by {post.frontmatter.author} / {post.frontmatter.date}
       </p>
       <p>{post.frontmatter.excerpt}</p>
