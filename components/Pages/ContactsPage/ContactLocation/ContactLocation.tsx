@@ -4,7 +4,7 @@ import styles from './ContactLocation.module.css';
 export const ContactLocation = () => {
   return (
     <section>
-      <h2 className={styles.title}>Locations</h2>
+      <h2 className={styles.container_title}>Locations</h2>
       <p className={styles.description}>
         Brought set all above. Our i saying dry gathering fourth unto behold sixth, replenish blessed sixth yielding
         great waters dominion was. From. Heaven us, light face made hath fill deep abundantly give itself good is them

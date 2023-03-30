@@ -1,3 +1,8 @@
+.container_title {
+  text-transform: uppercase;
+  line-height: 1;
+}
+
 .title {
   text-transform: uppercase;
 }
