@@ -9,3 +9,15 @@
   max-width: var(--max-width);
   margin: 0 auto;
 }
+
+@media screen and (max-width: 1000px) {
+  .container {
+    padding: var(--padding-medium);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+}
