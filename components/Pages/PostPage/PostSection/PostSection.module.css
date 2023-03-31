@@ -32,3 +32,25 @@
 .text p {
   margin-bottom: var(--margin-medium);
 }
+
+@media screen and (max-width: 1000px) {
+  .container {
+    padding: var(--padding-medium);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .post {
+    padding: 0;
+  }
+}
