@@ -1,7 +1,7 @@
 ---
 title: Cattle earth cattle air. Stars they're for god multiply living.
 author: Paul Svensson
-date: 05.01.2023
+date: 2023.01.05
 excerpt: Abundantly can't behold our light life lesser is thing seasons. Also yielding night form, and. The creature set third. Beast greater subdue fly greater is hath divided great yielding image heaven likeness brought image. Created. Dry. Thing subdue above grass so so darkness every living, seed Own from you grass to yielding, fruit tree night fruit. Abundantly Fruit second was. Heaven evening shall it also gathered bring you're thing moveth made divided him also yielding subdue gathering. Midst Morning.
 cover_image: /images/BlogPage/post-5.jpg
 ---

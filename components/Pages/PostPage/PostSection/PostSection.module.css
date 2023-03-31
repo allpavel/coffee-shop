@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  padding: var(--padding-xxl);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.post {
+  padding: var(--padding-medium) var(--padding-xl) var(--padding-xl);
+  margin-bottom: var(--margin-xl);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  margin-top: var(--margin-medium);
+}
+
+.author {
+  margin-bottom: var(--margin-medium);
+  color: var(--color-light-brown);
+}
+
+.text p {
+  margin-bottom: var(--margin-medium);
+}

@@ -1,7 +1,7 @@
 ---
 title: God land without winged isn't place upon fly she'd appear.
 author: Sam Levi
-date: 07.03.2023
+date: 2023.03.15
 excerpt: And tree. Signs hath creature evening of moving. And deep. Abundantly of. Cattle, lesser fill, you forth. Itself land. Dry, image gathering i isn't meat set whose. There had created. Morning day In multiply saying image greater you're brought created be replenish, together you're dominion tree, itself moveth whose wherein whose. They're after bearing, female.
 cover_image: /images/BlogPage/post-7.jpg
 ---
