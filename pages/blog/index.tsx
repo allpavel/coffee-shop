@@ -6,6 +6,7 @@ import { Hero } from '@/components/Pages/BlogPage/Hero/Hero';
 import { BlogSection } from '@/components/Pages/BlogPage/BlogSection/BlogSection';
 import { ScrollToTop } from '@/components/ScrollToTop/ScrollToTop';
 import { BlogPostType } from '@/types/types';
+import { sortByDate } from '@/utills/sortByDate';
 
 function BlogPage({ posts }: { posts: BlogPostType[] }) {
   return (
@@ -32,7 +33,7 @@ export const getStaticProps: GetStaticProps = async () => {
   });
 
   return {
-    props: { posts },
+    props: { posts: posts.sort(sortByDate) },
   };
 };
 

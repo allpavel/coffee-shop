@@ -10,7 +10,7 @@ export const BlogPost = ({ post }: { post: BlogPostType }) => {
       <Image src={post.frontmatter.cover_image} alt="" width={600} height={600} className={styles.image} />
       <h2 className={styles.title}>{post.frontmatter.title}</h2>
       <p className={styles.author}>
-        by {post.frontmatter.author} / {post.frontmatter.date}
+        by {post.frontmatter.author} / {new Date(post.frontmatter.date).toLocaleDateString('gb-GB')}
       </p>
       <p>{post.frontmatter.excerpt}</p>
       <div>

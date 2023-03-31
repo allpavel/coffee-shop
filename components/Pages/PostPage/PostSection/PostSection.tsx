@@ -11,7 +11,9 @@ export const PostSection = ({ frontmatter, content, slug }: PostPageType) => {
         <article className={styles.post}>
           <Image src={frontmatter.cover_image} alt="" width={740} height={565} className={styles.image} />
           <h2 className={styles.title}>{frontmatter.title}</h2>
-          <p className={styles.author}>{`by ${frontmatter.author} / ${frontmatter.date}`}</p>
+          <p className={styles.author}>{`by ${frontmatter.author} / ${new Date(frontmatter.date).toLocaleDateString(
+            'gb-GB'
+          )}`}</p>
           <div dangerouslySetInnerHTML={{ __html: marked(content) }} className={styles.text}></div>
         </article>
       </div>
