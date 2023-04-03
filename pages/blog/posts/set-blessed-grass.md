@@ -4,6 +4,8 @@ author: Jane Mascott
 date: 2020.10.20
 excerpt: Day herb the creeping day you, kind saw let face. Every created fly morning whales give his signs abundantly god brought won't. Third herb, sixth and. Be spirit shall dominion.
 cover_image: /images/BlogPage/post-1.jpg
+author_image: /images/BlogPage/author-2.png
+author_description: Fill gathered earth midst created likeness their made land so, living. Beast over cattle one. A greater darkness saw midst isn't were. From waters fruitful you yielding in. Won't multiply.
 ---
 
 ## Set blessed grass all second said first.

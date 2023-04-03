@@ -6,6 +6,8 @@ export interface BlogPostType {
     date: string;
     excerpt: string;
     cover_image: string;
+    author_image: string;
+    author_description: string;
   };
 }
 
@@ -16,6 +18,8 @@ export interface PostPageType {
     date: string;
     excerpt: string;
     cover_image: string;
+    author_image: string;
+    author_description: string;
   };
   slug: string;
   content: string;
