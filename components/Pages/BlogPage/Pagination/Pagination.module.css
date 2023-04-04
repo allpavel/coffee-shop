@@ -1,0 +1,41 @@
+.container {
+  padding: var(--padding-medium);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.link {
+  padding: var(--padding-large);
+  color: var(--color-light-brown);
+  text-decoration: none;
+  transition: background-color 0.3s linear;
+}
+
+.link:hover {
+  background-color: var(--color-light-beige);
+}
+
+.active {
+  background-color: var(--color-light-beige);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .link {
+    padding: var(--padding-medium);
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .content {
+    gap: 1rem;
+  }
+  .link {
+    padding: var(--padding-small);
+  }
+}
