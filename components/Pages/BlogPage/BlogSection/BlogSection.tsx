@@ -17,16 +17,7 @@ export const BlogSection = ({
 }): JSX.Element => {
   return (
     <>
-      <Pagination
-        totalLength={totalLength}
-        posts={posts}
-        currentPage={currentPage}
-        perPage={perPage}
-        pageLink={(page) => `/blog/${page}`}
-      />
-
       <section className={styles.container}>
-        <h2>Page: {currentPage}</h2>
         <div className={styles.content}>
           {posts.map((post) => (
             <BlogPost key={post.slug} post={post} />
@@ -34,6 +25,13 @@ export const BlogSection = ({
         </div>
         <BlogSidebar />
       </section>
+      <Pagination
+        totalLength={totalLength}
+        posts={posts}
+        currentPage={currentPage}
+        perPage={perPage}
+        pageLink={(page) => `/blog/${page}`}
+      />
     </>
   );
 };
