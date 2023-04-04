@@ -1,36 +1,41 @@
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import { GetStaticProps } from 'next';
-import { Hero } from '@/components/Pages/BlogPage/Hero/Hero';
 import { BlogSection } from '@/components/Pages/BlogPage/BlogSection/BlogSection';
+import { Hero } from '@/components/Pages/BlogPage/Hero/Hero';
 import { ScrollToTop } from '@/components/ScrollToTop/ScrollToTop';
-import { BlogPostType } from '@/types/types';
 import { sortByDate } from '@/utills/sortByDate';
+import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next';
+import { BlogPostType } from '@/types/types';
 
 const PER_PAGE = 3;
 
-function BlogPage({
-  posts,
-  totalLength,
-  currentPage,
-}: {
+interface PageProps {
   posts: BlogPostType[];
-  totalLength: number;
   currentPage: number;
-}) {
+  totalLength: number;
+}
+
+function PaginatedPage({ posts, currentPage, totalLength }: PageProps) {
   return (
     <>
       <Hero />
-      <BlogSection posts={posts} totalLength={totalLength} currentPage={currentPage} perPage={PER_PAGE} />
+      <BlogSection posts={posts} currentPage={currentPage} totalLength={totalLength} perPage={3} />
       <ScrollToTop />
     </>
   );
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticPaths: GetStaticPaths = async () => {
+  return {
+    paths: Array.from({ length: 5 }).map((_, i) => `/blog/${i + 2}`),
+    fallback: 'blocking',
+  };
+};
+
+export const getStaticProps: GetStaticProps = async ({ params }: GetStaticPropsContext) => {
+  const page = Number(params?.page) || 1;
   const limit = PER_PAGE;
-  const page = 1;
 
   const basicPath = path.join(process.cwd(), 'pages/blog/posts');
   const files = fs.readdirSync(basicPath);
@@ -48,8 +53,9 @@ export const getStaticProps: GetStaticProps = async () => {
   const paginatedPosts = posts.slice((page - 1) * limit, page * limit);
 
   return {
-    props: { posts: paginatedPosts, totalLength, currentPage: 1 },
+    props: { posts: paginatedPosts, totalLength, currentPage: page },
+    revalidate: 60 * 60 * 24,
   };
 };
 
-export default BlogPage;
+export default PaginatedPage;

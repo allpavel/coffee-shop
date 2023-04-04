@@ -24,3 +24,11 @@ export interface PostPageType {
   slug: string;
   content: string;
 }
+
+export interface PaginationPage {
+  totalLength: number;
+  perPage: number;
+  currentPage: number;
+  pageLink: (page: number) => string;
+  posts: BlogPostType[];
+}

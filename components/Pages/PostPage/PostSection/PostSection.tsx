@@ -5,7 +5,7 @@ import { PostPageType } from '@/types/types';
 import Image from 'next/image';
 import styles from './PostSection.module.css';
 
-export const PostSection = ({ frontmatter, content, slug }: PostPageType) => {
+export const PostSection = ({ frontmatter, content }: PostPageType) => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>

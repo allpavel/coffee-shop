@@ -14,7 +14,7 @@ export const BlogPost = ({ post }: { post: BlogPostType }) => {
       </p>
       <p>{post.frontmatter.excerpt}</p>
       <div>
-        <Link href={`/blog/${post.slug}`} className={styles.button}>
+        <Link href={`/posts/${post.slug}`} className={styles.button}>
           Read More <FaLongArrowAltRight className={styles.icon} />
         </Link>
       </div>
