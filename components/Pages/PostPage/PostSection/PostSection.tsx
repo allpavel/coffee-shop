@@ -1,6 +1,7 @@
 import { marked } from 'marked';
 import { FaTwitter, FaFacebookF, FaTumblr, FaLinkedinIn } from 'react-icons/fa';
 import { BlogSidebar } from '../BlogSidebar/BlogSidebar';
+import { GoBackButton } from '@/components/GoBackButton/GoBackButton';
 import { PostPageType } from '@/types/types';
 import Image from 'next/image';
 import styles from './PostSection.module.css';
@@ -9,6 +10,7 @@ export const PostSection = ({ frontmatter, content }: PostPageType) => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
+        <GoBackButton />
         <article className={styles.post}>
           <Image src={frontmatter.cover_image} alt="" width={740} height={565} className={styles.image} />
           <h2 className={styles.title}>{frontmatter.title}</h2>
@@ -40,6 +42,7 @@ export const PostSection = ({ frontmatter, content }: PostPageType) => {
             </div>
           </section>
         </section>
+        <GoBackButton />
       </div>
       <BlogSidebar />
     </section>
