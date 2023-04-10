@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { GetStaticProps } from 'next';
-import { Hero } from '@/components/Pages/BlogPage/Hero/Hero';
+import { SmallHero } from '@/components/SmallHero/SmallHero';
 import { BlogSection } from '@/components/Pages/BlogPage/BlogSection/BlogSection';
 import { ScrollToTop } from '@/components/ScrollToTop/ScrollToTop';
 import { BlogPostType } from '@/types/types';
@@ -21,7 +21,7 @@ function BlogPage({
 }) {
   return (
     <>
-      <Hero />
+      <SmallHero title="Blog" />
       <BlogSection posts={posts} totalLength={totalLength} currentPage={currentPage} perPage={PER_PAGE} />
       <ScrollToTop />
     </>

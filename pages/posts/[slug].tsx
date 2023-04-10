@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { GetStaticProps } from 'next';
-import { Hero } from '@/components/Pages/BlogPage/Hero/Hero';
+import { SmallHero } from '@/components/SmallHero/SmallHero';
 import { PostPageType } from '@/types/types';
 import { ScrollToTop } from '@/components/ScrollToTop/ScrollToTop';
 import { PostSection } from '@/components/Pages/PostPage/PostSection/PostSection';
@@ -10,7 +10,7 @@ import { PostSection } from '@/components/Pages/PostPage/PostSection/PostSection
 export default function PostPage(props: PostPageType) {
   return (
     <>
-      <Hero />
+      <SmallHero title="Post" />
       <PostSection {...props} />
       <ScrollToTop />
     </>
