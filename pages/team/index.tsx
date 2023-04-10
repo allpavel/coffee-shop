@@ -1,11 +1,11 @@
-import { Hero } from '@/components/Pages/TeamPage/Hero/Hero';
+import { SmallHero } from '@/components/SmallHero/SmallHero';
 import { TeamMembers } from '@/components/Pages/TeamPage/TeamMembers/TeamMembers';
 import { ScrollToTop } from '@/components/ScrollToTop/ScrollToTop';
 
 export default function Team() {
   return (
     <>
-      <Hero />
+      <SmallHero title="Our Team" />
       <TeamMembers />
       <ScrollToTop />
     </>

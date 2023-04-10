@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { BlogSection } from '@/components/Pages/BlogPage/BlogSection/BlogSection';
-import { Hero } from '@/components/Pages/BlogPage/Hero/Hero';
+import { SmallHero } from '@/components/SmallHero/SmallHero';
 import { ScrollToTop } from '@/components/ScrollToTop/ScrollToTop';
 import { sortByDate } from '@/utills/sortByDate';
 import { GetStaticPaths, GetStaticProps, GetStaticPropsContext } from 'next';
@@ -19,7 +19,7 @@ interface PageProps {
 function PaginatedPage({ posts, currentPage, totalLength }: PageProps) {
   return (
     <>
-      <Hero />
+      <SmallHero title="Blog" />
       <BlogSection posts={posts} currentPage={currentPage} totalLength={totalLength} perPage={3} />
       <ScrollToTop />
     </>

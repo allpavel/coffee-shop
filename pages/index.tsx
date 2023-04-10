@@ -13,7 +13,7 @@ import { ScrollToTop } from '@/components/ScrollToTop/ScrollToTop';
 export default function Home() {
   return (
     <>
-      <Hero />
+      <Hero title={'Brewed to perfection'} />
       <BookingSection />
       <AboutUs />
       <AboutApp />
