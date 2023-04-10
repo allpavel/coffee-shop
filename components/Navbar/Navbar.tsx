@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { GiHamburgerMenu } from 'react-icons/gi';
@@ -11,7 +11,7 @@ import styles from './Navbar.module.css';
 export const Navbar = () => {
   const [position, setPosition] = useState(0);
   const [isOpen, setIsOpen] = useState(false);
-  const router = useRouter();
+  const pathname = usePathname();
 
   const handleNavBarChange = () => {
     setPosition(window.scrollY);
@@ -47,33 +47,30 @@ export const Navbar = () => {
         )}
       </div>
       <nav className={`${styles.navigation} ${isOpen ? '' : styles.navClosed} `}>
-        <Link href="/" className={`${styles.navigation__link} ${router.pathname === '/' ? styles.active : ''}`}>
+        <Link href="/" className={`${styles.navigation__link} ${pathname === '/' ? styles.active : ''}`}>
           Home
         </Link>
-        <Link
-          href="/about"
-          className={`${styles.navigation__link} ${router.pathname === '/about' ? styles.active : ''}`}
-        >
+        <Link href="/about" className={`${styles.navigation__link} ${pathname === '/about' ? styles.active : ''}`}>
           About
         </Link>
         <Link
           href="/reservation"
-          className={`${styles.navigation__link} ${router.pathname === '/reservation' ? styles.active : ''}`}
+          className={`${styles.navigation__link} ${pathname === '/reservation' ? styles.active : ''}`}
         >
           Reservation
         </Link>
-        <Link href="/blog" className={`${styles.navigation__link} ${router.pathname === '/blog' ? styles.active : ''}`}>
+        <Link href="/blog" className={`${styles.navigation__link} ${pathname === '/blog' ? styles.active : ''}`}>
           Blog
         </Link>
-        <Link href="#" className={`${styles.navigation__link} ${router.pathname === '/shop' ? styles.active : ''}`}>
+        <Link href="#" className={`${styles.navigation__link} ${pathname === '/shop' ? styles.active : ''}`}>
           Shop
         </Link>
-        <Link href="/team" className={`${styles.navigation__link} ${router.pathname === '/team' ? styles.active : ''}`}>
+        <Link href="/team" className={`${styles.navigation__link} ${pathname === '/team' ? styles.active : ''}`}>
           Team
         </Link>
         <Link
           href="/contacts"
-          className={`${styles.navigation__link} ${router.pathname === '/contacts' ? styles.active : ''}`}
+          className={`${styles.navigation__link} ${pathname === '/contacts' ? styles.active : ''}`}
         >
           Contacts
         </Link>
