@@ -32,6 +32,11 @@
   background-color: var(--color-beige);
 }
 
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
 @media screen and (min-width: 1300px) {
   .content {
     min-width: var(--max-width);
@@ -50,12 +55,5 @@
   }
   .content {
     flex-direction: column-reverse;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .image {
-    max-width: 100%;
-    height: auto;
   }
 }
